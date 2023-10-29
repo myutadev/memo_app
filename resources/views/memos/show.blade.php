@@ -13,6 +13,9 @@
      <h1>{{ $memo->title }}</h1>
 
      <p>{!! nl2br(e($memo->body)) !!}</p>
+
+     <!-- $memoのidを元に編集ページへ遷移する -->
+     <button onclick='location.href="{{ route("memos.edit", $memo) }}"'>更新する</button>
  </body>
 
  </html>
